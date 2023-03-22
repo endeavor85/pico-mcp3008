@@ -36,6 +36,7 @@ public:
     int adcReadChannelDiff(AdcDifferentialMode diffMode);
 
     static const uint8_t NUM_CHANNELS = 8;  // number of channels on ADC (MCP3004 = 4, MCP3008 = 8)
+    static const uint8_t ADC_RESOLUTION = 10;
 
 private:
     spi_inst_t* spi_port;
