@@ -45,7 +45,7 @@ int MCP3008::spiRead(uint8_t channel, bool differential) {
  *    @param  channel
  *    @return -1 if channel < 0 or channel > 7, otherwise ADC (int)
  */
-int MCP3008::adcReadChannel(uint8_t channel) {
+int MCP3008::adc_read_channel(uint8_t channel) {
     if ((channel < 0) || (channel > 7)) {
         return -1;
     }

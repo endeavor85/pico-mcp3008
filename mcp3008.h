@@ -32,8 +32,8 @@ public:
     MCP3008(const MCP3008_Config &config);
     ~MCP3008();
 
-    int adcReadChannel(uint8_t channel);
-    int adcReadChannelDiff(AdcDifferentialMode diffMode);
+    int adc_read_channel(uint8_t channel);
+    int adc_read_channel_diff(AdcDifferentialMode diffMode);
 
     static const uint8_t NUM_CHANNELS = 8;  // number of channels on ADC (MCP3004 = 4, MCP3008 = 8)
     static const uint8_t ADC_RESOLUTION = 10;

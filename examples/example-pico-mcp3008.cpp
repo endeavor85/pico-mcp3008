@@ -41,7 +41,7 @@ int main() {
 
         for (int channel = 0; channel < MCP3008::NUM_CHANNELS; channel++) {
             cout << std::fixed << std::setw(4)
-                << mcp3008.adcReadChannel(channel);
+                << mcp3008.adc_read_channel(channel);
             if(channel < MCP3008::NUM_CHANNELS - 1) {
                 cout << ", ";
             }
