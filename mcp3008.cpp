@@ -57,7 +57,7 @@ int MCP3008::adc_read_channel(uint8_t channel) {
  *    @param  diffMode
  *    @return -1 if channel < 0 or channel > 7, otherwise ADC difference (int)
  */
-int MCP3008::adcReadChannelDiff(AdcDifferentialMode diffMode) {
+int MCP3008::adc_read_channel_diff(AdcDifferentialMode diffMode) {
     if ((diffMode < 0) || (diffMode > 7)) {
         return -1;
     }
